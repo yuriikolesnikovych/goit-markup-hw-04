@@ -142,13 +142,45 @@ body {
   color: #000000;
 }
 
+/* Пробные неверные варианты иконок
+
+
+.icon-envelope::before {
+  display: flex
+  content: "";
+  height: 12px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+
+  background-image: url(..//images/icon/envelope.svg);
+}
+
+.icon-smartphone::before {
+  display: block;
+  content: "";
+  background-image: url(../images/icon/smartphone.svg);
+} */
+
 /* стили для index.html */
 /* heroes */
 .heroes {
-  background-color: var(--bg-header-team);
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
+  background-color: var(--bg-header-team);
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title-txt {
@@ -219,9 +251,30 @@ body {
   margin-left: 30px;
 }
 
-.advantage-item {
-  width: 270px;
-  height: 101px;
+.advantage-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: rgba(245, 244, 250, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/icon/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(..//images/icon/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(..//images/icon/astronaut.svg);
 }
 
 .list-title {
